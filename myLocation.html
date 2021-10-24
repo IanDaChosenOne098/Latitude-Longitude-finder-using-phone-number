@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7bab342f8a1e41f28bd34a110006ebbb {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_7bab342f8a1e41f28bd34a110006ebbb" ></div>
+        
+</body>
+<script>    
+    
+            var map_7bab342f8a1e41f28bd34a110006ebbb = L.map(
+                "map_7bab342f8a1e41f28bd34a110006ebbb",
+                {
+                    center: [31.8160381, 31.8160381],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b04b388d4b0f4f689a6dffa643f05195 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_7bab342f8a1e41f28bd34a110006ebbb);
+        
+    
+            var marker_b8583f9510904e54a0d00c5a1249703f = L.marker(
+                [31.8160381, 31.8160381],
+                {}
+            ).addTo(map_7bab342f8a1e41f28bd34a110006ebbb);
+        
+    
+        var popup_55282778d0fd4d9496599ef3d519986b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c630fb0eeec945399cfe29d26d9864ff = $(`<div id="html_c630fb0eeec945399cfe29d26d9864ff" style="width: 100.0%; height: 100.0%;">Texas</div>`)[0];
+            popup_55282778d0fd4d9496599ef3d519986b.setContent(html_c630fb0eeec945399cfe29d26d9864ff);
+        
+
+        marker_b8583f9510904e54a0d00c5a1249703f.bindPopup(popup_55282778d0fd4d9496599ef3d519986b)
+        ;
+
+        
+    
+</script>
